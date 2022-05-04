@@ -31,7 +31,10 @@
      * they are spaced so far apart*/
     /* transform: scale(0.125); */
     transform: scale(0.85);
-    transition: transform 125ms ease-in-out;
+
+    margin: 0em 1em 0em 1em;
+    transition: transform 125ms ease-in-out,
+                margin 125ms ease-in-out;
 }
 
 .contact_info_item:hover, 
@@ -49,8 +52,8 @@
 .image_container {
     display: inline-block; /* the wrapper div should only be as large as its contents */
     position: relative; /* we want the ::after to be relative to this div, for easy positioning */
-    margin: 0em 1em 0em 1em;
-    transition: margin 125ms ease-in-out;
+    /* margin: 0em 1em 0em 1em; */
+    /* transition: margin 125ms ease-in-out; */
 }
 /* pseudo elements don't work on images so I need to wrap it in a div*/
 .image_container::before {
@@ -75,6 +78,7 @@
 }
 
 /* Specify what the text says under the icon */
+/* Do this in a pseudo element so that the div doesn't take into account the spacing of the text when calculating padding */
 #phone::after {
     content: "(786) 702-8193"
 }
@@ -88,15 +92,20 @@
     content: "https://github.com/jtledon"
 }
 
-.image_container:hover, 
-.image_container:focus {
-    opacity: 1;
+.contact_info_item:hover, 
+.contact_info_item:focus {
     margin: 0em 3em 0em 3em;
 }
-.image_container:hover::after, 
+/* .image_container:hover::after, 
 .image_container:focus::after {
     opacity: 1;
+} */
+
+.contact_info_item:hover .image_container::after,
+.contact_info_item:focus .image_container::after {
+    opacity: 1;
 }
+
 
 /* We want the details to not show by default, and show on hover of the entire element */
 .contact_info_details {
