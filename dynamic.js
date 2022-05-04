@@ -5,8 +5,8 @@ function test() {
 }
 
 function CopyToClipboard(self) {
-    let log_text = self.firstElementChild.value
-    let clipboard_text = self.lastElementChild.textContent
+    let log_text = self.children[0].value
+    let clipboard_text = self.children[1].value
 
     // TODO: give a nice custom alert box that you copied the specific text to the clipboard
     // Should disappear after like 3 seconds without any user input
@@ -17,7 +17,7 @@ function CopyToClipboard(self) {
             title: 'Copied to clipboard',
             html: "Copied Jason Ledon's " + log_text + " to your clipboard",
             showConfirmButton: false,
-            backdrop: false,
+            // backdrop: false,
             timerProgressBar: true,
             timer: 1500,
           })
