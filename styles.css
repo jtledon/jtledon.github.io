@@ -13,6 +13,7 @@
 
 .contact_info_item {
     text-align: center;
+    white-space: nowrap;
 
     transform: scale(0.125);
     transition: transform 125ms ease-in-out;
