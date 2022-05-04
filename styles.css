@@ -15,6 +15,10 @@
     flex-wrap: wrap;
 }
 
+.contact_info h2 {
+    margin-bottom: 0.75em;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -118,4 +122,44 @@
 .contact_info_item:hover .contact_info_details, 
 .contact_info_item:focus .contact_info_details {
     opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+li {
+    list-style: none;
+}
+
+body {
+    margin-bottom: 50px; /* needs to be the size of the footer so it doesn't cover any content when it reaches the bottom */
+}
+
+/* starting footer testing */
+.footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: space-evenly;
+    /* justify-items: center; */
+
+    position: fixed; /* stays in the same location even when scrolling */
+    /* use STICKY for headers. They start relative, and then scroll with the top of the page */
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #999;
+}
+
+.blah {
+    font-size: 3em;
 }
