@@ -4,9 +4,63 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+
+	<script src="dynamic.js"></script>
+	<!-- https://sweetalert2.github.io/#download -->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- for custom alert displays -->
+
+
 	<title>Jason Ledon</title>
 </head>
 <body>
-	
+	<!-- This is where I will include info for school and a link to a page on it -->
+	<!-- and work, solidworks, personal projects, etc -->
+	<!-- <section>
+		<h2>Background Information</h2>
+		<a href="">
+			<img src="" alt="">
+			<p></p>
+		</a>
+		<a href="">
+			<img src="" alt="">
+			<p></p>
+		</a>
+		<a href="">
+			<img src="" alt="">
+			<p></p>
+		</a>
+	</section> -->
+	<section class="container contact_info">
+		<h2>Contact Information</h2>
+		<div class="contact_info_item" onclick="CopyToClipboard(this)">
+			<input type="hidden" value="email">
+			<div class="image_container"><img src="icons/email.png" alt="Email Icon" class="contact_info_image"></div>
+			<p class="contact_info_details">jtledon@gmail.com</p>
+		</div>
+		<div class="contact_info_item" onclick="CopyToClipboard(this)">
+			<input type="hidden" value="LinkedIn link">
+			<div class="image_container"><img src="icons/linkedin.png" alt="LinkedIn Icon" class="contact_info_image"></div>
+			<p class="contact_info_details">www.linkedin.com/in/jasonledon</p>
+		</div>
+		<!-- <div class="contact_info_item">
+			<img src="icons/phone.png" alt="Phone Icon" class="contact_info_image">
+			<p class="contact_info_details"></p>
+		</div>
+		<div class="contact_info_item">
+			<img src="icons/twitter.png" alt="Twitter Icon" class="contact_info_image">
+			<p class="contact_info_details"></p>
+		</div>
+		<div class="contact_info_item">
+			<img src="icons/youtube.png" alt="YouTube Icon" class="contact_info_image">
+			<p class="contact_info_details"></p>
+		</div>
+		<div class="contact_info_item">
+			<img src="icons/instagram.png" alt="Instagram Icon" class="contact_info_image">
+			<p class="contact_info_details"></p>
+		</div> -->
+	</section>
 </body>
 </html>
