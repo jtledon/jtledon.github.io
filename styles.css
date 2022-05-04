@@ -7,14 +7,24 @@
 
 .contact_info {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
 .contact_info_item {
     text-align: center;
     white-space: nowrap;
 
+    /* FIXME: for whatever reason, the spacing is based off the size of the 
+     * image, PRIOR to scaling the images and text down. So the divs are 
+     * really large because of the massive pictures and text. That's why 
+     * they are spaced so far apart*/
     transform: scale(0.125);
     transition: transform 125ms ease-in-out;
 }
