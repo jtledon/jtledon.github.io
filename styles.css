@@ -8,13 +8,17 @@
 .contact_info {
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+    
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .contact_info_item {
@@ -25,17 +29,22 @@
      * image, PRIOR to scaling the images and text down. So the divs are 
      * really large because of the massive pictures and text. That's why 
      * they are spaced so far apart*/
-    transform: scale(0.125);
+    /* transform: scale(0.125); */
+    transform: scale(0.85);
     transition: transform 125ms ease-in-out;
 }
 
 .contact_info_item:hover, 
 .contact_info_item:focus {
-    transform: scale(0.175);
+    /* transform: scale(0.175); */
+    transform: scale(1);
     opacity: 0.75;
     cursor: pointer;
 } 
 
+.contact_info_image {
+    display: block;
+}
 
 .image_container {
     display: inline-block; /* the wrapper div should only be as large as its contents */
@@ -50,7 +59,7 @@
     transform: translate(-50%, -50%);
     padding: 150% 150% 0 0;
     border-radius: 50%;
-    background: turquoise;
+    /* background: turquoise; */
     z-index: -1; /* this wont work without having a position relative and absolute */
 }
 
@@ -58,11 +67,31 @@
 .contact_info_details {
     opacity: 0;
     transition: opacity 125ms linear;
-    font-size: 7em;
+    font-size: 1em;
 }
 
 /* When hovering over the entire contact_info_items, we want to show the text */
 .contact_info_item:hover .contact_info_details, 
 .contact_info_item:focus .contact_info_details {
     opacity: 1;
+}
+
+
+
+
+.padding_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+}
+.padding_test {
+    background: red;
+    padding: 1em;
+    transition: padding 250ms linear;
+}
+.padding_test:hover {
+    background: blue;
+    padding: 3em;
+    /* transition: padding 250ms linear; */
 }

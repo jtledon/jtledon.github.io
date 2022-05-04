@@ -17,13 +17,14 @@ function CopyToClipboard(self) {
             title: 'Copied to clipboard',
             html: "Copied Jason Ledon's " + log_text + " to your clipboard",
             showConfirmButton: false,
+            backdrop: false,
             timerProgressBar: true,
-            timer: 2000,
+            timer: 1500,
           })
     }, function () {
         Swal.fire({
             position: 'top',
-            icon: 'warning',
+            icon: 'error',
             title: 'Failed to copy to clipboard',
             html: "Failed to copy Jason Ledon's " + log_text + " to your clipboard. Check clipboard permissons.",
             showConfirmButton: false,

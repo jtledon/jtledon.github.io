@@ -36,20 +36,30 @@
 	<section class="container contact_info">
 		<h2>Contact Information</h2>
 		<div class="wrapper">
+			<!-- TODO: make it so that all the icons are really close to each 
+					   other to start, but hovering over them expands the 
+					   padding to the left and right, so that there is room 
+					   to show the text beneath -->
 			<div class="contact_info_item" onclick="CopyToClipboard(this)">
 				<input type="hidden" value="email">
-				<div class="image_container"><img src="icons/email.png" alt="Email Icon" class="contact_info_image"></div>
+				<div class="image_container"><img src="icons/email_small.png" alt="Email Icon" class="contact_info_image"></div>
 				<p class="contact_info_details">jtledon@gmail.com</p>
 			</div>
 			<div class="contact_info_item" onclick="CopyToClipboard(this)">
+				<input type="hidden" value="phone number">
+				<div class="image_container"><img src="icons/phone_small.png" alt="Phone Icon" class="contact_info_image"></div>
+				<p class="contact_info_details">(786) 702-8193</p>
+			</div>
+			<!-- TODO: make sure actual a links to the websites -->
+			<div class="contact_info_item" onclick="CopyToClipboard(this)">
 				<input type="hidden" value="LinkedIn link">
-				<div class="image_container"><img src="icons/linkedin.png" alt="LinkedIn Icon" class="contact_info_image"></div>
-				<p class="contact_info_details">www.linkedin.com/in/jasonledon</p>
+				<div class="image_container"><img src="icons/linkedin_small.png" alt="LinkedIn Icon" class="contact_info_image"></div>
+				<p class="contact_info_details">www.linkedin.com/in/jtledon</p>
 			</div>
 			<div class="contact_info_item" onclick="CopyToClipboard(this)">
-				<input type="hidden" value="phone number">
-				<div class="image_container"><img src="icons/phone.png" alt="Phone Icon" class="contact_info_image"></div>
-				<p class="contact_info_details">(786) 702-8193</p>
+				<input type="hidden" value="GitHub profile">
+				<div class="image_container"><img src="icons/github_small.png" alt="GitHub icon" class="contact_info_image"></div>
+				<p class="contact_info_details">https://github.com/jtledon</p>
 			</div>
 			<!-- <div class="contact_info_item" onclick="CopyToClipboard(this)">
 				<input type="hidden" value="Twitter handle">
@@ -67,6 +77,13 @@
 				<p class="contact_info_details">(786) 702-8193</p>
 			</div> -->
 		</div>
+	</section>
+	<section class="padding_wrapper">
+		<div class="padding_test a">a</div>
+		<div class="padding_test b">b</div>
+		<div class="padding_test c">c</div>
+		<div class="padding_test d">d</div>
+		<div class="padding_test e">e</div>
 	</section>
 </body>
 </html>
