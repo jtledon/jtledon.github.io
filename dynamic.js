@@ -10,32 +10,40 @@ function CopyToClipboard(self) {
 
     // TODO: give a nice custom alert box that you copied the specific text to the clipboard
     // Should disappear after like 3 seconds without any user input
-    let timerInterval
-    Swal.fire({
-    title: 'Auto close alert!',
-    html: "Copied Jason Ledon's " + log_text + " to your clipboard",
-    timer: 2000,
-    timerProgressBar: true,
-    didOpen: () => {
-            Swal.showLoading()
-            const b = Swal.getHtmlContainer().querySelector('b')
-            timerInterval = setInterval(() => {
-            b.textContent = Swal.getTimerLeft()
-            }, 100)
-        },
-        willClose: () => {
-            clearInterval(timerInterval)
-        }
-    }).then((result) => {
-        /* Read more about handling dismissals below */
-        if (result.dismiss === Swal.DismissReason.timer) {
-            console.log('I was closed by the timer')
-        }
-    })
-
-
     navigator.clipboard.writeText(clipboard_text).then(function () {
-        alert("Copied Jason Ledon's " + log_text + " to your clipboard")
+        // let timerInterval
+        // Swal.fire({
+        // position: 'top',
+        // title: 'Copied to clipboard',
+        // html: "Copied Jason Ledon's " + log_text + " to your clipboard",
+        // timer: 1500,
+        // timerProgressBar: true,
+        // didOpen: () => {
+        //         // Swal.showLoading()
+        //         showConfirmButton: false
+        //         const b = Swal.getHtmlContainer().querySelector('b')
+        //         timerInterval = setInterval(() => {
+        //         b.textContent = Swal.getTimerLeft()
+        //         }, 100)
+        //     },
+        //     willClose: () => {
+        //         clearInterval(timerInterval)
+        //     }
+        // }).then((result) => {
+        //     /* Read more about handling dismissals below */
+        //     if (result.dismiss === Swal.DismissReason.timer) {
+        //         console.log('I was closed by the timer')
+        //     }
+        // })
+        Swal.fire({
+            position: 'top',
+            // icon: 'success',
+            title: 'Copied to clipboard',
+            html: "Copied Jason Ledon's " + log_text + " to your clipboard",
+            showConfirmButton: false,
+            timerProgressBar: true,
+            timer: 1500,
+          })
     }, function () {
         alert('Failure to copy. Check permissions for clipboard')
     });
