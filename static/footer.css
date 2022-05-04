@@ -21,6 +21,7 @@ li {
 
 .contact_info h2 {
     /* margin-bottom: 0.75em; */
+    font-size: 2.5em;
 }
 
 .wrapper {
@@ -72,7 +73,7 @@ li {
     transform: translate(-50%, -50%);
     padding: 150% 150% 0 0;
     border-radius: 50%;
-    background: #ddd;
+    background: #072969;
     z-index: -1; /* this wont work without having a position relative and absolute */
 }
 
@@ -160,7 +161,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 120px;
-    background: #999;
+    background: #f7e8d8;
 }
 
 .blah {

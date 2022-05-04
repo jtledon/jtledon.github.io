@@ -1,0 +1,34 @@
+/* .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 10em;
+    background-image: url('images/twitter_banner_crop.jpeg');
+
+    background-image: url(demo.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-top: 200px;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+
+} */
+
+.header h1 {
+    color: black;
+    background: "test.jpg" no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    font-size: 12em;
+    font-weight: 700;
+}
