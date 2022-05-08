@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.98242312"
-     inkscape:cx="-205.10511"
-     inkscape:cy="848.92139"
+     inkscape:zoom="0.69467805"
+     inkscape:cx="-514.62688"
+     inkscape:cy="1459.669"
      inkscape:window-width="3840"
      inkscape:window-height="2050"
      inkscape:window-x="-12"
@@ -193,7 +193,10 @@
     <g
        id="g1040"
        transform="matrix(0.72832779,0,0,0.72832779,-0.17436862,271.08566)"
-       style="stroke-width:0.363275">
+       style="stroke-width:0.363275"
+       inkscape:export-filename="D:\main_documents\1_Assorted_Tech-y_Files\_CodingProjects\professional_jtledon_website\jtledon.github.io\icons\phone_small.png"
+       inkscape:export-xdpi="10.14"
+       inkscape:export-ydpi="10.14">
       <g
          id="g1038"
          style="stroke-width:0.363275"
@@ -205,5 +208,15 @@
            sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
       </g>
     </g>
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M 74.728279,406.21795 A 74.737525,74.737525 0 0 0 0,480.94623 c 0,32.99798 21.548933,60.96478 50.883658,71.05546 3.672809,0.46034 5.040731,-1.83782 5.040731,-3.67282 v -12.83573 c -20.621521,4.59102 -25.202982,-10.08112 -25.202982,-10.08112 -3.21176,-8.7132 -8.25427,-11.00889 -8.25427,-11.00889 -6.876791,-4.58145 0.449718,-4.58145 0.449718,-4.58145 7.336069,0.46033 11.467811,7.79535 11.467811,7.79535 6.876788,11.45825 17.417195,8.24471 21.548936,6.41786 0.44972,-5.04074 2.744341,-8.24507 4.581451,-10.08147 -16.508194,-1.83783 -33.925383,-8.25392 -33.925383,-37.13893 0,-8.24507 2.744347,-14.67215 7.794996,-20.1718 -0.467418,-1.37749 -3.215308,-9.16328 0.917139,-19.25361 0,0 6.417866,-1.83781 20.621521,7.795 5.958597,-1.83782 12.386023,-2.29462 18.80389,-2.29462 6.417866,0 12.835732,0.91714 18.794318,2.29462 14.212866,-9.6222 20.630736,-7.795 20.630736,-7.795 4.12253,10.09033 1.36686,17.87612 0.91005,19.71253 a 29.606441,29.606441 0 0 1 7.795,20.1718 c 0,28.88501 -17.42641,34.84395 -33.916184,36.68001 2.744341,2.28753 5.040742,6.86757 5.040742,13.74472 v 20.63073 c 0,1.83783 1.366858,4.12253 5.040382,3.67282 a 74.803109,74.803109 0 0 0 50.88365,-71.05546 c -0.46034,-41.26181 -33.91617,-74.72828 -75.177631,-74.72828 z"
+       fill="#000000"
+       id="path2"
+       style="stroke-width:0.264583"
+       inkscape:export-filename="D:\main_documents\1_Assorted_Tech-y_Files\_CodingProjects\professional_jtledon_website\jtledon.github.io\icons\github_small.png"
+       inkscape:export-xdpi="10.17"
+       inkscape:export-ydpi="10.17" />
   </g>
 </svg>
