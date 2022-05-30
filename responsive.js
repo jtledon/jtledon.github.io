@@ -37,8 +37,8 @@ animatedImages.forEach((image) => {
     image.animate(
         {
             transform: [
-                "perspective(1250px) rotateX(45deg)",
-                "perspective(1250px) rotateX(0)",
+                "perspective(500px) rotateX(45deg)",
+                "perspective(500px) rotateX(0)",
             ],
             opacity: ["0.4", "1"],
         },
