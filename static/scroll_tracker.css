@@ -1,0 +1,7 @@
+.scroll_tracker {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 0.5rem;
+    background-color: blue;
+    transform-origin: left;
+}
