@@ -31,7 +31,7 @@ animatedImages.forEach((image) => {
                 // {target: image, edge: "end", threshold: "0"},
                 // {target: image, edge: "start", threshold: "1"},
                 CSS.px(imageOffsetTop + imageHeight - window.innerHeight),
-                CSS.px(imageOffsetTop - (window.innerHeight/4)),
+                CSS.px(imageOffsetTop - (window.innerHeight/3)),
             ],
         })
     image.animate(
