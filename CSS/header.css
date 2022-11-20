@@ -1,12 +1,15 @@
 /* make the navbar/header stick to the top of the page */
-header {
+/* TODO: fix this. This is only because I am using jquery to insert the html template inside, and therefore I am using a wrapper div */
+div:has( > .sticky-header) { /* select all div's that have a child element with a class of .sticky-header */
     position: sticky;
     top: 0;
     width: 100%; /* don't use 100vw. This breaks when a scrollbar pops up */
+    margin-bottom: 1em;
 }
 
 body {
     height: 100%;
+    display: unset;
 }
 
 /* style the contents of the header */
@@ -54,15 +57,20 @@ header {
     align-items: center;
 
     font-family: "Nunito", sans-serif;
-    font-size: 1.5rem 0rem;
+    font-size: 1.5rem;
 }
 
 .navbar li {
     list-style-type: none;
-    padding: 4px 10px;
+    padding: 4px 0.5em;
+    border-radius: 0.25em;
 }
 
 .navbar li a {
     text-decoration: none; /* remove underline */
     color: inherit; /* get rid of link purple or blue color */
+}
+
+.navbar li:hover {
+    background-color: #404040;
 }
