@@ -1,0 +1,68 @@
+/* make the navbar/header stick to the top of the page */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%; /* don't use 100vw. This breaks when a scrollbar pops up */
+}
+
+body {
+    height: 100%;
+}
+
+/* style the contents of the header */
+header {
+    background-color: #202020;
+    color: white;
+    font-family: "Georgia", serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 2rem;
+}
+
+/* organize the layout of the header */
+header {
+    /* fallbacks for compatibility reasons */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    aspect-ratio: 1;
+    height: 7rem /* 1rem */;
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
+    filter: brightness(0) invert(1);
+    padding: 4px 0px;
+}
+
+.navbar ul {
+    /* fallbacks for compatibility reasons */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem 0rem;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 4px 10px;
+}
+
+.navbar li a {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* get rid of link purple or blue color */
+}

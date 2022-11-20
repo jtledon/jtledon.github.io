@@ -1,0 +1,11 @@
+/* make the navbar/header stick to the top of the page */
+footer {
+    position: fixed;
+    bottom: 100%;
+    width: 100%; /* don't use 100vw. This breaks when a scrollbar pops up */
+}
+
+/* necessary so that the fixed position sticky header doesn't cover the top content of the page */
+body {
+    padding-bottom: 150px; /* TODO: don't hardcode this. Update it with JS */
+}

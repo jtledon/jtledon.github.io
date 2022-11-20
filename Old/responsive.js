@@ -1,5 +1,6 @@
 import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
+// TODO: DELETE ALL THIS SHIT BECAUSE IT NO LONGER WORKS!!!!
 const scrollTracker = document.querySelector(".scroll_tracker");
 const scrollTrackingTimeline = new ScrollTimeline({
     socurce: document.scrollingElement,
